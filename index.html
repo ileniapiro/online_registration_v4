@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister|Cinzel&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Ilenia's Form</title>
+  </head>
+
+  <body>
+    <div class="wrap0">
+    <h1 class="start">The Code Review</h1>
+    <header class="main-header">
+      <h2>Sign up for our newsletter</h2>
+      <p class="mainp">Get the latest news on how your code is doing right in your inbox</p>
+    </header>
+   </div>
+
+      <form action="index.html" method="post">
+        <section class="wrap">
+          <legend class="contact">Contact Information</legend>
+          <fieldset class="list">
+            <label for="name"> Full Name</label><input type="text" placeholder="name" id="name" name="user-name"><br>
+            <label for="email">Email Address</label><input type="email" placeholder="email" id="email" name="user-email"><br>
+            <label for="phone">Phone Number</label><input type="phone" id="phone" name="user-ohone"><br>
+            <label for="address">Street Address</label><input type="address" id="address" name="user-address"><br>
+            <label for="city">City</label><input type="city" id="city" name="user-city"><br>
+            <label for="state">State</label><select id="state" name="user-state">
+              <option value="Italy">Italy</option>
+              <option value="France">France</option>
+              <option value="Spain">Spain</option>
+              <option value="Portugal">Portugal</option>
+              <option value="Belgium">Belgium</option>
+              <option value="Austria">Austria</option>
+              <option value="United-Kingdom">United Kingdom</option>
+              <option value="Ireland">Ireland</option>
+              <option value="Greece">Greece</option>
+              <option value="Netherlands">Netherlands</option>
+              <option value="Bulgaria">Bulgaria</option>
+              <option value="Croatia">Croatia</option>
+              <option value="Denmark">Denmark</option>
+              <option value="Hungary">Hungary</option>
+              <option value="Poland">Poland</option>
+              <option value="Luxembourg">Luxembourg</option>
+              <option value="Romania">Romania</option>
+              <option value="Finland">Finland</option>
+              <option value="Cyprus">Cyprus</option>
+              <option value="Czechia">Czechia</option>
+              <option value="Hungary">Hungary</option>
+              <option value="Slovenia">Slovenia</option>
+              <option value="Lithuania">Lithuania</option>
+              <option value="Slovakia">Slovakia</option>
+              <option value="Sweden">Sweden</option>
+              <option value="Malta">Malta</option></select><br>
+            <label for="zip">Zip Code</label><input type="zip" id="zip" name="user-zip">
+           </fieldset>
+         </section>
+
+          <section class="wrap2">
+            <legend class="newsletter">Newsletter</legend>
+            <fieldset class="list2">
+                  <h3>Select the newsletter you would like to receive</h3>
+                  <label for="html-news" class="html"><input type="checkbox" id="html-news" value="interest-html" name="user-interest-html">
+                  HTML News</label><br>
+                  <label for="css-news" class="css"><input type="checkbox" id="css-news" value="interest-css" name="user-interest-css">
+                  CSS News</label><br>
+                  <label for="java-script-news" class="java"><input type="checkbox" id="java-script-news" value="interest-java" name="user-interest-java">
+                  Java Script News</label><br>
+
+          <section class="wrap3">
+                  <h4>Newsletter Format</h4>
+                  <div class="radiob">
+                  <label for="html"><input type="radio" id="html" value="html" name="news-format">HTML</label>
+                  <label for="plain-text"><input type="radio" id="plain-Text" value="plain-text" name="news-format">Plain Text</label>
+                  </div>
+          </section>
+               <h5 class="othertopic">Other topic you'd like to hear about</h5>
+               <textarea id="other-topic" name="other-topic"></textarea>
+
+               <button type="submit">Sign Up</button>
+            </fieldset>
+          </form>
+
+            <footer>
+              <p class="copyright">&copy Copyright The Code Review</p>
+        </footer>
+
+      </body>
+      </html>
