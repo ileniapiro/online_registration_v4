@@ -100,22 +100,20 @@ select {
   border: none;
 }
 .list input:focus {
- background: #ff9b05;
+  background: #ff9b05;
 }
 .list select:focus {
- background: #ff9b05;
+  background: #ff9b05;
 }
 .contact {
- font-size: 1.3em;
- margin-left: 13px;
- margin-top: 1em;
+  font-size: 1.3em;
+  padding-top: 1em;
 }
 .newsletter {
-  width: 90%;
+  width: 100%;
+  border-top: solid;
   font-size: 1.3em;
   font-weight: bold;
-  margin-left: 14px;
-  border-top: 2px solid;
   padding-top: 1em;
 }
 .wrap2 {
@@ -154,17 +152,17 @@ h4 {
   font-weight: normal;
 }
 textarea {
- width: 100%;
- display: block;
- margin-left: auto;
- margin-right: auto;
- margin-bottom: 1.7em;
- height: 100px;
- padding: 12px 20px;
- box-sizing: border-box;
- border: 2px solid #ccc;
- border-radius: 10px;
- resize: none;
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.7em;
+  height: 100px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  resize: none;
 }
 textarea:focus {
   background: #ff9b05;
@@ -185,13 +183,9 @@ button {
   width: 100%;
   border: 1px solid;
   border-width: 1px;
-  box-shadow: #048989 inset;
   margin-bottom: 10px;
-  transition: ease-in-out 1s ease-in-out;
 }
-button:hover {
-  background-color: #ffc266;
-}
+
 .copyright {
   text-align: center;
   width: 90%;
@@ -219,6 +213,11 @@ h2 {
 .mainp {
   width:100%;
 }
+.list,
+.list2 {
+  padding-left: 0;
+  padding-right: 0;
+}
 .insidelist {
   display: flex;
   display: -webkit-flex;
@@ -227,7 +226,7 @@ h2 {
 }
 .insidelist input,
 select {
-	flex: 1;
+  flex: 1;
 	-webkit-flex: 1;
 }
 .insidelist label {
@@ -236,5 +235,14 @@ select {
 }
 #zip {
   max-width: 30%;
+}
+.newsletter {
+  margin-left: 0;
+}
+button {
+  transition: ease-in-out 1s ease-in-out;
+}
+button:hover {
+  background-color: #ffc266;
 }
 }
