@@ -21,6 +21,7 @@ h1 {
   background-color: white;
   opacity:0.5;
   margin: auto;
+  margin-bottom: .3em;
   padding-top: .5em;
   padding-bottom: .5em;
 }
@@ -64,6 +65,7 @@ h2{
   width: 99%;
 }
 #zip {
+  display:grid;
   height: 36px;
   border-radius: 10px;
   margin-top: .5em;
@@ -72,12 +74,12 @@ h2{
 }
 #name::placeholder {
   font-family: 'Cinzel', sans-serif;
-  color: orange;
+  color: black;
   opacity:1;
   }
 #email::placeholder {
   font-family: 'Cinzel', sans-serif;
-  color: orange;
+  color: black;
   opacity:1;
 }
 select {
@@ -87,12 +89,21 @@ select {
   margin-bottom: 1em;
   width: 99%;
 }
+.list > label {
+  padding-bottom: .3em;
+}
 .list {
   display: flex;
   padding-top: 1em;
   padding-bottom: 1em;
   flex-direction: column;
   border: none;
+}
+.list input:focus {
+ background: #ff9b05;
+}
+.list select:focus {
+ background: #ff9b05;
 }
 .contact {
  font-size: 1.3em;
@@ -113,7 +124,6 @@ select {
 }
 .list2 {
   border: none;
-  margin-bottom: 1em;
 }
 .html,
 .css,
@@ -128,26 +138,23 @@ h3 {
 h4 {
   font-weight: bold;
   font-size: 1.3em;
-  margin-left: 14px;
-  margin-top: 0;
+  margin-top: 1em;;
   margin-bottom: 1em;
 }
 .radiob {
   display: flex;
   flex-direction: column;
   line-height: 2.3em;
-  padding-left: 14px;
   padding-bottom: .8em;
 }
 .othertopic {
   margin-top: .5em;
-  margin-bottom: .5em;
-  margin-left: 14px;
+  margin-bottom: .7em;
   font-size: 1em;
   font-weight: normal;
 }
 textarea {
- width: 95%;
+ width: 100%;
  display: block;
  margin-left: auto;
  margin-right: auto;
@@ -164,7 +171,7 @@ textarea:focus {
   color: white;
 }
 button {
-  max-width: 95%;
+  max-width: 100%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -180,6 +187,10 @@ button {
   border-width: 1px;
   box-shadow: #048989 inset;
   margin-bottom: 10px;
+  transition: ease-in-out 1s ease-in-out;
+}
+button:hover {
+  background-color: #ffc266;
 }
 .copyright {
   text-align: center;
@@ -189,37 +200,41 @@ button {
   border: none;
   padding-top: 1em;
 }
+/* Media Queries --------------------*/
+
 @media (min-width: 768px) {
 
-body {
-  margin-left: 0;
-  margin-right: 0;
-}
-.wrap,
-.wrap2,
-.wrap3 {
-  width: 60%;
+form {
+  width: 65%;
   margin: auto;
 }
-.mainp  {
-  width: 60%;
+h2 {
+  font-size: 1.7em;
+}
+.main-header {
   margin: auto;
+  width: 65%;
+  margin-top: 1.5em;
 }
-
-
-
-
-
-
-
+.mainp {
+  width:100%;
 }
-
-
-
-
-
-
-
-
-
-/* Media Queries --------------------*/
+.insidelist {
+  display: flex;
+  display: -webkit-flex;
+	flex-direction: row;
+	-webkit-flex-direction: row;
+}
+.insidelist input,
+select {
+	flex: 1;
+	-webkit-flex: 1;
+}
+.insidelist label {
+  padding-top: 1em;
+  width: 30%;
+}
+#zip {
+  max-width: 30%;
+}
+}
