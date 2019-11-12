@@ -72,15 +72,9 @@ h2{
   margin-bottom: .5em;
   width: 50%;
 }
-#name::placeholder {
-  font-family: 'Cinzel', sans-serif;
+::placeholder {
   color: black;
-  opacity:1;
-  }
-#email::placeholder {
   font-family: 'Cinzel', sans-serif;
-  color: black;
-  opacity:1;
 }
 select {
   height: 3em;
@@ -88,6 +82,7 @@ select {
   margin-top: 1em;
   margin-bottom: 1em;
   width: 99%;
+  font-family: 'Cinzel', sans-serif;
 }
 .list > label {
   padding-bottom: .3em;
@@ -240,7 +235,7 @@ select {
   margin-left: 0;
 }
 button {
-  transition: ease-in-out 1s ease-in-out;
+  transition: 1s ease-in-out;
 }
 button:hover {
   background-color: #ffc266;
