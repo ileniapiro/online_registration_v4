@@ -6,7 +6,7 @@ This is an example of an Online Registration Form
 
 As you can see from the image below the website is fully responsive.
 
-![Online Registration Form](https://github.com/ileniapiro/Registration Form_Portfolio/raw/master/Registration Form_Portfolio.png)
+![Online Registration Form](https://github.com/ileniapiro/online_registration_v4/raw/master/Registration Form_Portfolio.png)
 
 ## Author
 
